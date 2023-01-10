@@ -23,8 +23,8 @@ if ( cartItems[product.id] !==0){
 
 {totalAmount >0 ?
 <div className='checkout'>
-  <p>Subtotal: ${totalAmount}</p>
-  <button onClick={()=> navigate ("/")}>Continue Shopping</button>
+  <p>Subtotal: {totalAmount},00 RON</p>
+  <button onClick={()=> navigate ("/shop")}>Continue Shopping</button>
   <button>Checkout</button>
 </div>
 : <h1> Your Cart is Empty</h1>}

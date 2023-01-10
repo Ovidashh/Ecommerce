@@ -12,7 +12,7 @@ export const CartItem = (props) => {
       <img src={productImage}/>
       <div className='description'>
         <p><b>{productName}</b></p>
-        <p>${price}</p>
+        <p>{price},00 RON</p>
         <div className='countHandler'>
             <button onClick={()=> removeFromCart(id)}> - </button>
             <input value={cartItems[id]}  onChange={(e)=> updateCartItemCount(Number(e.target.value), id)}/>
