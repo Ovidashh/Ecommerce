@@ -3,13 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: MonteCarlo, serif;
+  font-size: 30px;
 }
 
 .cartItem {
   width: 700px;
   height: 250px;
   display: flex;
-  background-color: rgb(82, 167, 185);
+  background-color: #143858;
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -22,9 +24,13 @@
   width: 200px;
   height: 150px;
   margin-left: 35px;
+  border-radius: 20px;
 }
 
 .cartItem .description {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
   width: 100%;
   font-size: 30px;
 }
@@ -33,15 +39,73 @@
   width: 40px;
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 30px;
 }
-
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.checkout p{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
 .checkout button {
-  width: 150px;
+  width: 200px;
   height: 50px;
-  background-color: rgb(19, 19, 19);
-  color: white;
-  border: none;
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  border: solid;
   border-radius: 8px;
   margin: 10px;
   cursor: pointer;
+}
+.checkout button:hover {
+  background-color: #0f2c4a;
+  transition: 0.5s ease-in-out;
+  color: white;
+  border-radius: 40px;
+  width: 220px;
+  height: 70px;
+}
+@media only screen and (max-width: 1400px) {
+  .cartItem {
+    width: 500px;
+  }
+  .cartItem img {
+    width: 200px;
+    height: 150px;
+  }
+  .cartItem .description {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cartItem {
+    width: 400px;
+  }
+  .cartItem img {
+    width: 175px;
+    height: 130px;
+  }
+  .cartItem .description {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cartItem {
+    width: 400px;
+  }
+  .cartItem img {
+    width: 175px;
+    height: 130px;
+  }
+  .cartItem .description {
+    font-size: 20px;
+  }
 }

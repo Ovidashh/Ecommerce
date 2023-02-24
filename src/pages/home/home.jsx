@@ -1,29 +1,26 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-import BannerImg from '../../assets/invitatie1.jpg';
-import '../home/home.css';
+import React, { useState } from 'react'
+import './home.css';
+import wedding1 from '../../assets/wedding.jpg';
+import wedding2 from '../../assets/wedding1.jpeg';
+import wedding3 from '../../assets/wedding3.webp';
+import baptism from '../../assets/baptism.webp';
+import baptism2 from '../../assets/baptism2.jpg';
+import Slider from '../../pages/home/Slider';
+import Hero from './Hero';
 
-function Home() {
-    return (
-        // <div className='home' style={{ backgroundImage: `url(${BannerImg})`  }}>
-        //     <div className='headerContainer'>
-        //         <h1>Pono Craft's By Alexandra Bucataru</h1>
-        //         <p>EARTH without "ART" is just "EH"</p>
-        //         <Link to ="/shop"><button>Vezi invitatiile</button></Link>
-        //     </div>
-        // </div>
-        <div className='banner'>
-            <div className='banner-img'>
-            <img src={BannerImg} id="bannerimg" alt="Logo"/>;
-            </div>
-            <div className='banner-text'>
-                <h1>Blue Tag</h1>
-                <p>
-                    "Love is like the wind, you can’t see it but you can feel it.” Nicholas Sparks
-                </p>
-            </div>
-        </div>
-    )
+const Home = ({ imageSrc }) => {
+
+  return (
+    <div className='Home'>
+      <Hero imageSrc={wedding2} />
+      <Slider imageSrc={wedding1} title={"On my own I’m only half of what I could be."} subtitle={"Blake Shelton"}/>
+      <Slider imageSrc={wedding3} title={"A successful marriage requires falling in love many times, always with the same person."} subtitle={"Mignon McLaughlin"} flipped={true} />
+      <Slider imageSrc={baptism} title={"Baptism is the initial step of a faithful heart."} subtitle={"Max Lucado"}/>
+      <Slider imageSrc={baptism2} title={"When we were baptized we took upon us not only the name of Christ, but also the law of obedience."} subtitle={"Robert D. Hales"} flipped={true} />
+    </div>
+
+
+  )
 }
 
 export default Home;

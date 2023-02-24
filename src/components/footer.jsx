@@ -1,20 +1,24 @@
 import React from 'react'
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import YoutubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "./footer.css";
 
 function Footer() {
+  const FacebookURL = () => {window.location.href ="https://www.facebook.com/PonoCraftsStore"}
+  const InstagramURL = () => {window.location.href ="https://www.instagram.com/ponocrafts/?fbclid=IwAR3Jr4iTu6pn_Bly5UrRxGuOzMDmBVpA_x2NXepliN4hjpVJfk5Z_7Upqp8"}
+  const YouTubeURL = () => {window.location.href ="https://www.youtube.com/channel/UCpf0ZYnLD8Xb2H0yvqFy_TA"}
+  const LinkedInURL = () => {window.location.href ="https://www.linkedin.com/in/alexandrabucataru/"}
   return (
     <div className='footer'>
         <div className='socialMedia'>
-            <InstagramIcon />
-            <TwitterIcon />
-            <FacebookIcon />
-            <LinkedInIcon />
+            <InstagramIcon onClick={InstagramURL}/>
+            <YoutubeIcon id="youtube" onClick={YouTubeURL}/>
+            <FacebookIcon onClick={FacebookURL}/>
+            <LinkedInIcon onClick={LinkedInURL}/>
         </div>
-        <p> &copy; {new Date().getFullYear()} Pono Craft's by Alexandra Bucataru</p>
+        <p> &copy; {new Date().getFullYear()} O~Vis</p>
    
     </div>
   )

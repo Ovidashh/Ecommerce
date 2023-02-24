@@ -7,7 +7,7 @@ const Shop = () => {
     return (
         <div className='shop'>
             <div className='shopTitle'>
-                <h1> Pono Craft's</h1>
+                <h1> O~Vis crafts</h1>
             </div>
             <div className='products'> {PRODUCTS.map((product) => (
             <Product data={product } />

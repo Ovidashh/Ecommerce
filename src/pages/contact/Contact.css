@@ -1,0 +1,32 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-family: MonteCarlo, serif; */
+    font-size: 26px;
+    
+    width: 100%;
+}
+.first-open{
+    max-width: 700px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.second-open{
+    max-width: 700px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+.third-open{
+    max-width: 700px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+h6{
+    margin:10px;
+    }
+h1{
+    font-size: 40px;
+}

@@ -1,9 +1,11 @@
 .shopTitle {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     font-size: 40px;
+    font-family: MonteCarlo, sans-serif;
   }
   .products {
+   
     width: 100%;
     height: auto;
     display: grid;
@@ -25,10 +27,24 @@
   .product img {
     width: 300px;
     height: 225px;
+    border-radius: 20px;
   }
   
   .product .description {
+    font-family: MonteCarlo,sans-serif;
+    font-size: 29px;
     text-align: center;
+  }
+  .description .pname{
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  .description .price{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: rgb(19, 19, 19);
   }
   
   .product:hover {
@@ -48,7 +64,28 @@
   }
   
   .addToCartBtn:hover {
-    background-color: rgb(19, 19, 19);
+    background-color: #143858;
+    transition: 0.5s ease-in-out;
     color: white;
     cursor: pointer;
+    min-width: 150px;
+  }
+.shopTitle h1{
+  margin-bottom:30px;
+  font-size: 40px;
+}
+  @media only screen and (max-width: 1400px) {
+    .products {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .products {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
   }

@@ -1,0 +1,37 @@
+.Formullar {
+    text-align: center;
+    min-width: 600px;
+    margin-bottom: 50px;
+   
+  }
+  
+.Formullar {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .ui.form .field>label{
+    font-size: 18px;
+  }
+#button{
+  background-color:white;
+  border: 3px solid #0f2c3f;
+  color:black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+ 
+}
+#button:hover{
+color:white;
+background-color:#0f2c3f;
+}
+
+ @media screen and (max-width: 800px) {
+  .Formullar {
+    min-width: 300px;
+  }
+  
+ }
+  
