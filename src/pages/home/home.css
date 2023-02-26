@@ -4,5 +4,43 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
   }
+  .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .address h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: MonteCarlo, sans-serif;
+  }
+  .address p{
+    margin-top: 14px;
+  }
+  .address button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:#0f2c3f ;
+    color: #ffffff;
+    cursor: pointer;
+    }
+  .address button:hover{
+  background-color: #ffffff;
+  color: #0f2c3f;
+  transition: 0.5s ease;
+  border: 3px solid black;
+  text-shadow: #0f2c3f 0px 0px 10px;
+  
+  }
+  
   
   
